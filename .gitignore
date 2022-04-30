@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+venv/
+cache/
+artifacts/
+.env
+
+# tenderly
+deployments/
+tenderly.yaml
