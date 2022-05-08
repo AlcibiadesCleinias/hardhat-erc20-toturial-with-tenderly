@@ -47,10 +47,10 @@ contract Token {
         // If `require`'s first argument evaluates to `false` then the
         // transaction will revert.
         require(balances[msg.sender] >= amount, "Not enough tokens");
-
-        for (uint i = 0; i < 10; i++) {
-          zombies[i] = 100;
-        }
+//
+//        for (uint i = 0; i < 10; i++) {  # todo: for testing reverts in evm
+//          zombies[i] = 100;
+//        }
 
         // Transfer the amount.
         balances[msg.sender] -= amount;
